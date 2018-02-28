@@ -1,0 +1,17 @@
+- code: unique participant identifier
+- task: task and assessment (suffix 0 = pretest, 1 = posttest)
+- version: order of task administration; shouldn't be relevant here but I kept it just in case (A = forward order, B = backward order)
+- trialNo: trial number (1-16)
+- load: set size (3 or 5 memoranda)
+- cue: retro cue presented or not (0 = no, 1 = yes)
+- phase: updating or recall (participants had to recall the most recent values at the end of each trial)
+- step: updating step (1-9)
+- pos: position that'll be updated (1 to load from left to right)
+- currentVal: current value for the to-be-updated memorandum
+- operation: arithmetic operation to be applied (no sign means addition, negative sign means subtraction of the value in there; e.g., 1 means +1, -2 means -2)
+- recall.pos: position of to be retrieved memorandum (order of events in file is the temporal order; e.g., in the first trial they needed to recall the memorandum on the right first, followed by the left one, and finally the middle one).
+- startVal: original starting value at that position, in case the distance to the to-be-recalled one can be of any use
+- correctAnswer: the correct answer that participants should have given at that point
+- response: the answer participants did give
+- points: accuracy of the answer participants gave (0 = wrong, 1 = correct)
+- rt = reaction time
